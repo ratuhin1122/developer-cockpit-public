@@ -288,7 +288,7 @@ Developer Cockpit is a fully functional, verified native desktop product. The co
 For strategic technology partnerships, enterprise deployments, OEM licensing, or technical evaluation:
 
 - **Partnership Guide:** [`partnerships/PARTNERSHIP.md`](./partnerships/PARTNERSHIP.md)
-- **Contact:** `partnerships@developercockpit.app`
+- **Contact:** [ruhulamintuhin715@gmail.com](mailto:ruhulamintuhin715@gmail.com)
 
 ---
 
