@@ -3,6 +3,10 @@
 > **The Unified Developer Workspace for Windows**  
 > Bringing terminal sessions, project launch orchestration, port management, git visual workflows, container management, runtime versions, SSH connections, and snippets into one native desktop application.
 
+<p align="center">
+  <img src="assets/developer-cockpit.png" alt="Developer Cockpit — Unified Developer Workspace for Windows" width="100%" />
+</p>
+
 ---
 
 ## 🎬 Live Video Demos
@@ -27,7 +31,7 @@ See Developer Cockpit in action across key workflows:
 
 ## Key Highlights
 
-- **⚡ Native Windows Performance:** Built on Tauri v2 and Rust with ConPTY integration, running with sub-second startup times and low memory consumption.
+- **⚡ Native Windows Performance:** Built on Tauri v2 and Rust with ConPTY integration, running with sub-second startup times and low memory consumption (~40–80 MB idle).
 - **🖥️ Modern Terminal Engine:** Multi-tab, split-pane terminal emulator powered by xterm.js 6 with custom themes, font zooming, and in-terminal search.
 - **🚀 Project & Workspace Orchestration:** Multi-step project launchers and one-click workspace snapshot/restore.
 - **🔌 Deep System Introspection:** Win32-level port inspection (process tree termination and restart) and WSL2-aware Docker Workspace with streaming logs.
