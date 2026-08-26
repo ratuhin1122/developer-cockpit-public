@@ -1,86 +1,297 @@
 # Developer Cockpit
 
-> **The Unified Developer Workspace for Windows**  
-> Bringing terminal sessions, project launch orchestration, port management, git visual workflows, container management, runtime versions, SSH connections, and snippets into one native desktop application.
+**An extensible, high-performance desktop workspace designed to unify core developer workflows and eliminate context switching on Windows.**
 
 <p align="center">
-  <img src="assets/developer-cockpit.png" alt="Developer Cockpit — Unified Developer Workspace for Windows" width="100%" />
+  <img src="assets/developer-cockpit.png" alt="Developer Cockpit Interface" width="100%" />
 </p>
-
----
-
-## 🎬 Live Video Demos
-
-See Developer Cockpit in action across key workflows:
-
-- 🖥️ **[Modern Terminal Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-rustlang-tauri-activity-7489988657211199488-liuF)** — Tabs, split panes, multi-shell support, themes, and zoom.
-- 🚀 **[Project & Workspace Launcher Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-developertools-rustlang-activity-7492835719602688000-0-cz)** — Multi-step launch orchestration & 1-click workspace restore.
-- 🔌 **[Port Manager, Versions & Snippets Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-devtools-developerproductivity-activity-7493708867860602881-hdVX)** — Live socket inspection, process killing, toolchain version detector.
-- 🌿 **[Git Dashboard Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-git-github-activity-7494808462086873090-Kgso)** — Visual SVG commit graph, stashes, tags, and merge assistants.
-- 🐳 **[Docker Workspace & Doctor Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_docker-developertools-devtools-activity-7496613450530320384-CYMc)** — Compose grouping, graph view, streaming logs, and WSL2 Docker Doctor.
-
-*Explore all walkthrough scenarios in [demo/DEMO.md](./demo/DEMO.md).*
 
 ---
 
 ## Overview
 
-**Developer Cockpit** solves context switching for developers on Windows. Instead of juggling separate windows for terminal shells, Docker Desktop, Git GUIs, Port monitors, SSH clients, and snippet managers, Developer Cockpit provides a unified, high-performance desktop cockpit backed by Tauri v2, Rust, React 19, and SQLite.
+Developer Cockpit consolidates the fragmented utilities a developer juggles throughout the day—terminal emulators, workspace layouts, multi-step project launchers, port monitors, Git visual tools, Docker environments, runtime version inspectors, SSH connection managers, and snippet libraries—into a single, low-latency native application.
+
+Built on **Tauri v2**, **Rust**, **React 19**, and an embedded **SQLite** engine, Developer Cockpit provides deep Windows subsystem integration (ConPTY, DPAPI, Win32 memory traversal) with minimal background resource overhead.
 
 ---
 
-## Key Highlights
+## Live Video Walkthroughs
 
-- **⚡ Native Windows Performance:** Built on Tauri v2 and Rust with ConPTY integration, running with sub-second startup times and low memory consumption (~40–80 MB idle).
-- **🖥️ Modern Terminal Engine:** Multi-tab, split-pane terminal emulator powered by xterm.js 6 with custom themes, font zooming, and in-terminal search.
-- **🚀 Project & Workspace Orchestration:** Multi-step project launchers and one-click workspace snapshot/restore.
-- **🔌 Deep System Introspection:** Win32-level port inspection (process tree termination and restart) and WSL2-aware Docker Workspace with streaming logs.
-- **🧩 Extensible Plugin System:** Modern Plugin SDK (v2) with sandboxed iframe/worker execution and scoped SQLite key-value persistence.
-- **🔒 Secure Architecture:** Zero-password storage for SSH profiles, DPAPI-encrypted licensing storage, and offline Ed25519 cryptographic token validation.
+Watch Developer Cockpit demonstrated across core workflows:
+
+| Feature Area | Demonstration | Highlights |
+| :--- | :--- | :--- |
+| **Modern Terminal** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-rustlang-tauri-activity-7489988657211199488-liuF) | ConPTY integration, multi-tab sessions, split panes, shell selection, custom themes, and zoom. |
+| **Project & Workspace Launcher** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-developertools-rustlang-activity-7492835719602688000-0-cz) | Multi-step launch orchestration (IDE, scripts, browser) and 1-click workspace snapshot & restore. |
+| **Port Manager, Versions & Snippets** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-devtools-developerproductivity-activity-7493708867860602881-hdVX) | Live socket detection, Win32 process memory inspection, process tree killing, toolchain version detector. |
+| **Git Dashboard** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-git-github-activity-7494808462086873090-Kgso) | Visual SVG commit graph, branch management, ahead/behind tracking, stashes, tags, and merge assistants. |
+| **Docker Workspace & Doctor** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_docker-developertools-devtools-activity-7496613450530320384-CYMc) | Compose v2 grouping, SVG dependency graph, streaming logs drawer, and WSL2 Docker Doctor checks. |
+
+*Full demonstration scripts and scenario walkthroughs are documented in [`demo/DEMO.md`](./demo/DEMO.md).*
 
 ---
 
-## Repository Structure
+## Screenshots
 
-This repository serves as the public-facing documentation, architecture reference, and partner overview for Developer Cockpit.
+<p align="center">
+  <img src="assets/developer-cockpit.png" alt="Developer Cockpit Overview Dashboard and Terminal" width="100%" />
+</p>
 
+*Additional high-resolution module captures are indexed in [`assets/screenshots/`](./assets/screenshots/).*
+
+---
+
+## Why Developer Cockpit
+
+Every day, developers lose focus and cognitive context switching between standalone terminal windows, container dashboards, Git GUIs, port finders, and note apps:
+
+1. **Context Fragmentation:** Daily workflows are distributed across 5–8 separate windows, each consuming independent memory and operating in isolation.
+2. **Setup Friction:** Starting a complex project requires running 4–6 manual commands across multiple terminals, IDEs, and browser windows.
+3. **Heavy Desktop Overhead:** Running multiple Electron-based developer tools simultaneously creates heavy idle memory and CPU consumption.
+4. **Disjointed State:** Terminal layouts, active container logs, and port bindings are lost across reboots.
+
+Developer Cockpit unifies these operations behind a single icon rail, backed by a shared SQLite store, a unified command palette, and a low-latency native shell.
+
+---
+
+## Key Capabilities
+
+- **ConPTY Modern Terminal:** Multi-tab, recursive split-pane terminal emulator running on Windows ConPTY and xterm.js 6 with live font zooming, in-buffer search, and 6 curated themes.
+- **Workspace Layout Restore:** 1-click snapshotting and restoration of entire multi-tab and split-pane terminal sessions with directory bindings.
+- **Multi-Step Project Launcher:** Automated launch orchestration chaining IDE startup, terminal build scripts, local web URLs, and folder views with framework auto-detection.
+- **Port Manager & Process Inspector:** Real-time TCP/TCPv6 socket monitor with Win32 process memory introspection (extracting command lines and working directories), process tree killing, and restart.
+- **Advanced Git Dashboard:** Track local repositories, navigate visual SVG commit history graphs, manage stashes and tags, resolve merge/cherry-pick conflicts, and inspect contributor analytics.
+- **Docker Workspace & Doctor:** Compose v2 project grouping, topological service dependency graphs, streaming logs over Tauri Channels, container shell launcher, and WSL2 health checks.
+- **Zero-Password SSH Manager:** Organize remote host profiles by groups and favorites with direct terminal connection and zero password storage.
+- **Version Dashboard:** Probes and verifies installation status, version strings, and filesystem paths for 12 core developer toolchains.
+- **Command Snippets Library:** Categorized snippet repository with single-click execution into active terminal shells.
+- **Extensible Plugin System (SDK v2):** Sandboxed iframe/worker runtime supporting custom sidebar modules, overview dashboard widgets, and scoped SQLite storage.
+
+---
+
+## Feature Overview
+
+```mermaid
+graph TD
+    Cockpit["Developer Cockpit"]
+    
+    subgraph CoreShell ["Core Shell & Productivity"]
+        Terminal["Modern Terminal (ConPTY / xterm.js 6)"]
+        Workspaces["Workspace Manager (Snapshot & Restore)"]
+        Projects["Project Launcher (Multi-Step Sequences)"]
+        Snippets["Command Snippets Library"]
+        Palette["Global Command Palette (Ctrl+K)"]
+    end
+
+    subgraph SystemDiagnostics ["System Diagnostics & Environment"]
+        Ports["Port Manager (Win32 Introspection & Kill Tree)"]
+        Versions["Version Dashboard (12 Toolchains)"]
+        Doctor["Docker Doctor & WSL2 Diagnostics"]
+    end
+
+    subgraph Workflows ["Container & Version Control"]
+        Docker["Docker Workspace (Compose v2 & Live Logs)"]
+        Git["Git Dashboard (SVG Graph, Stashes, Merges)"]
+        SSH["SSH Profile Manager (Zero-Password)"]
+    end
+
+    subgraph Extensibility ["Extensibility & Platform"]
+        PluginSDK["Plugin SDK v2 (Sandboxed Runtime)"]
+        Settings["Settings Hub (13 Sections)"]
+    end
+
+    Cockpit --> CoreShell
+    Cockpit --> SystemDiagnostics
+    Cockpit --> Workflows
+    Cockpit --> Extensibility
 ```
-developer-cockpit/
-├── docs/                      # Comprehensive technical & product documentation
-│   ├── architecture/          # System architecture, Tauri/Rust backend, React frontend
-│   ├── features/              # Feature deep dives and module specifications
-│   ├── product/               # Product overview, Free vs Pro matrix
-│   ├── development/           # Contribution, setup, and build pipelines
-│   ├── plugin-sdk/            # Plugin SDK v2 documentation and guides
-│   ├── licensing/             # Cryptographic licensing, DPAPI, and offline validation
-│   ├── platform/              # Windows-specific subsystems and platform notes
-│   └── business/              # Commercial overview and enterprise partnerships
-├── roadmap/                   # Strategic development roadmap
-├── demo/                      # Product walkthroughs and video demonstrations
-├── partnerships/              # Commercial, technology, and integration partnerships
-└── assets/                    # Screenshots, architectural diagrams, and branding
+
+---
+
+## Free vs. Pro Edition
+
+Developer Cockpit follows an open-core commercial model with capability-driven gating managed via a centralized feature catalog:
+
+| Feature / Capability | Free Edition | Pro Edition |
+| :--- | :---: | :---: |
+| **Modern Terminal** (Unlimited tabs, split panes, all shells, themes, zoom) | Full | Full |
+| **Basic Git Dashboard** (Repository status, branches, ahead/behind tracking) | Full | Full |
+| **Project Launcher** (Single-step program & folder launches) | Full | Full |
+| **Version Dashboard** (Auto-detects 12 developer toolchains) | Full | Full |
+| **Command Snippets Library** (Local storage, categorization, 1-click execution) | Full | Full |
+| **Settings Hub** (All 13 configuration sections) | Full | Full |
+| **Workspace Manager** (Session snapshotting & layout restore) | — | Full |
+| **Multi-Step Project Launcher** (Automated multi-action pipelines) | — | Full |
+| **Port Manager** (Win32 process memory inspection, tree kill, restart) | — | Full |
+| **Advanced Git Suite** (SVG commit graph, stashes, tags, merge assistants, analytics) | — | Full |
+| **Docker Workspace & Doctor** (Compose grouping, graphs, streaming logs, diagnostics) | — | Full |
+| **SSH Profile Manager** (Grouped profiles & direct terminal launch) | — | Full |
+| **Plugin System & SDK v2** (Sandboxed custom modules, widgets, and scoped storage) | — | Full |
+
+*For complete capability details and architectural gating rules, see [`docs/licensing/`](./docs/licensing/).*
+
+---
+
+## Architecture
+
+Developer Cockpit separates UI presentation from native execution through a typed IPC bridge:
+
+```mermaid
+flowchart TD
+    User([Developer])
+
+    subgraph Frontend ["Frontend Layer (React 19 + TypeScript + Vite 7)"]
+        AppShell["AppShell & Icon Rail"]
+        Modules["Lazy-Loaded Feature Modules"]
+        ZustandStores["Zustand State Stores"]
+        PluginSandbox["Plugin Sandbox (iframe / WebWorker RPC)"]
+    end
+
+    subgraph Bridge ["IPC Bridge (Tauri v2)"]
+        IPC["Tauri IPC Commands & Channels"]
+    end
+
+    subgraph Backend ["Backend Layer (Rust 2021)"]
+        CommandHandlers["Domain Command Handlers"]
+        PTYManager["TerminalManager (portable-pty / ConPTY)"]
+        DockerStreams["DockerLogManager (Stream Supervisor)"]
+        LicenseEngine["License Engine (Ed25519 + DPAPI)"]
+        SQLiteEngine["SQLite Plugin (tauri-plugin-sql / 8 Migrations)"]
+    end
+
+    subgraph OS ["Operating System & Toolchains (Windows 10/11)"]
+        ConPTY["ConPTY Native Subsystem"]
+        Win32["Win32 APIs (Process Memory, Netstat, DPAPI)"]
+        Toolchains["CLI Toolchains (git, docker, ssh, wsl)"]
+    end
+
+    User <--> AppShell
+    AppShell --> Modules
+    Modules <--> ZustandStores
+    Modules <--> PluginSandbox
+    Modules <--> IPC
+    
+    IPC <--> CommandHandlers
+    IPC <--> PTYManager
+    IPC <--> DockerStreams
+    
+    CommandHandlers --> LicenseEngine
+    CommandHandlers --> SQLiteEngine
+    CommandHandlers --> Win32
+    
+    PTYManager <--> ConPTY
+    CommandHandlers <--> Toolchains
 ```
+
+---
+
+## Plugin Ecosystem & SDK (v2)
+
+Developer Cockpit features a dedicated TypeScript SDK (`@developer-cockpit/plugin-sdk`) allowing third parties to build custom tools that run securely inside the cockpit:
+
+```typescript
+import { createPlugin, type CockpitApi } from "@developer-cockpit/plugin-sdk";
+
+export default createPlugin({
+  id: "my-custom-tool",
+  name: "Custom Dev Tool",
+  version: "1.0.0",
+  sidebar: {
+    title: "Custom Tool",
+    icon: "rocket",
+    mount(container: HTMLElement, api: CockpitApi) {
+      container.innerHTML = `<div style="padding: 24px; color: #fff;">
+        <h2>Custom Workspace View</h2>
+        <button id="run-btn">Execute Task</button>
+      </div>`;
+
+      const btn = container.querySelector("#run-btn");
+      btn.onclick = () => api.openTerminalTab({ command: "npm run build" });
+
+      return () => { container.innerHTML = ""; };
+    }
+  }
+});
+```
+
+*See [`docs/plugin-sdk/`](./docs/plugin-sdk/) for complete API references, authoring guides, and verified code examples.*
 
 ---
 
 ## Technology Stack
 
-- **Desktop Shell:** Tauri v2 (Rust 2021)
+- **Desktop Framework:** [Tauri v2](https://tauri.app/) (Rust 2021 native backend)
 - **UI Framework:** React 19 + TypeScript 5.8 + Vite 7
-- **Styling:** Tailwind CSS v4 + Radix UI Primitives
+- **Styling:** Tailwind CSS v4 + Radix UI Primitives + Lucide Icons
 - **State Management:** Zustand 5
-- **Local Storage:** SQLite (via `tauri-plugin-sql`)
-- **Terminal Backend:** ConPTY (`portable-pty`) + xterm.js 6
-- **Cryptography:** Ed25519 (`ed25519-dalek`) + Windows DPAPI
+- **Local Storage:** SQLite (via `tauri-plugin-sql` with 8 sequential schema migrations)
+- **Terminal Subsystem:** Windows ConPTY (`portable-pty: 0.8`) + xterm.js 6
+- **Cryptography:** Ed25519 (`ed25519-dalek: 2.0`) + Windows DPAPI (`CryptProtectData`)
 
 ---
 
-## Commercial & Licensing Inquiries
+## Platform Support
 
-For partnership discussions, technical evaluations, or commercial inquiries, please refer to [`partnerships/PARTNERSHIP.md`](./partnerships/PARTNERSHIP.md) or contact `partnerships@developercockpit.app`.
+- **Target Operating System:** Microsoft Windows 10 (version 1809+) and Windows 11 (x86_64).
+- **Native OS Integrations:**
+  - Windows ConPTY pseudo-console subsystem.
+  - Windows Data Protection API (DPAPI) user-scoped token encryption.
+  - Windows 11 Mica material backdrop blur (`windowEffects: ["mica"]`).
+  - Win32 Process Environment Block (PEB) memory inspection.
+  - WSL 2 wide-character (UTF-16LE) output decoding.
+  - Background process suppression via Win32 `CREATE_NO_WINDOW`.
+
+---
+
+## Security Architecture
+
+- **Zero-Password Storage Policy:** SSH credentials and remote server passwords are never stored in application databases or logs.
+- **DPAPI Token Protection:** Sensitive local license tokens are encrypted using Windows DPAPI, preventing cross-user and cross-machine key theft.
+- **Sandboxed Plugin Execution:** Third-party plugins execute within isolated sandbox contexts with mediated access over an asynchronous RPC bridge.
+- **Memory Safety & Unsafe Boundary:** Core application logic is written in 100% safe Rust, strictly confining `unsafe` blocks to isolated Win32 memory and DPAPI wrappers.
+- **Command Injection Prevention:** CLI subprocesses execute via tokenized argument vectors rather than shell string interpolation.
+
+---
+
+## Documentation
+
+Comprehensive technical, architectural, and developer documentation is organized in `docs/`:
+
+- **[Architecture Deep Dives](./docs/architecture/README.md):** System process models, backend command design, frontend React patterns, and Windows integration.
+- **[Feature Specifications](./docs/features/README.md):** Detailed technical documentation and capability matrix for all 11 modules.
+- **[Commercial & Licensing](./docs/licensing/README.md):** Cryptographic licensing, DPAPI storage, and capability-driven feature flags.
+- **[Plugin SDK Reference](./docs/plugin-sdk/README.md):** Manifest schema, `CockpitApi` reference, and step-by-step authoring guides.
+- **[Product Demonstrations](./demo/DEMO.md):** Live video walkthroughs and interactive demonstration scenarios.
+
+---
+
+## Roadmap
+
+- [x] **v0.1.0:** Core Native Windows Cockpit (Terminal, Workspaces, Projects, Ports, Git, Docker, Versions, SSH, Snippets, Plugin SDK v2, Offline Ed25519 Licensing).
+- [ ] **Phase 2 (Planned):** Centralized Online Plugin Marketplace with 1-click cloud installs.
+- [ ] **Phase 3 (Planned):** End-to-end encrypted cloud synchronization for settings, snippets, and team workspaces.
+- [ ] **Phase 4 (Exploratory):** POSIX PTY platform abstraction for potential macOS and Linux desktop targets.
+
+*Detailed milestones and implementation phases are outlined in [`roadmap/ROADMAP.md`](./roadmap/ROADMAP.md).*
+
+---
+
+## Project Status
+
+Developer Cockpit is a fully functional, verified native desktop product. The core application architecture, 11 feature modules, Plugin SDK (v2), and Ed25519 licensing engine are complete and active.
+
+---
+
+## Commercial & Partnership Inquiries
+
+For strategic technology partnerships, enterprise deployments, OEM licensing, or technical evaluation:
+
+- **Partnership Guide:** [`partnerships/PARTNERSHIP.md`](./partnerships/PARTNERSHIP.md)
+- **Contact:** `partnerships@developercockpit.app`
 
 ---
 
 ## License
 
-See [`LICENSE`](./LICENSE) for details.
+Documentation, specifications, and SDK definitions in this repository are available under standard evaluation and development terms. See [`LICENSE`](./LICENSE) for details.
