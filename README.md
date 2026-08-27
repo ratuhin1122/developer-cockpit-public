@@ -31,17 +31,7 @@ Watch Developer Cockpit demonstrated across core workflows:
 
 *Full demonstration scripts and scenario walkthroughs are documented in [`demo/DEMO.md`](./demo/DEMO.md).*
 
----
 
-## Screenshots
-
-<p align="center">
-  <img src="assets/developer-cockpit.png" alt="Developer Cockpit Overview Dashboard and Terminal" width="100%" />
-</p>
-
-*Additional high-resolution module captures are indexed in [`assets/screenshots/`](./assets/screenshots/).*
-
----
 
 ## Why Developer Cockpit
 
