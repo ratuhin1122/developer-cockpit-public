@@ -10,12 +10,12 @@ Watch live video demonstrations of Developer Cockpit in action:
 
 | Module / Feature Area | Video Demonstration | Key Capabilities Showcased |
 | :--- | :--- | :--- |
-| **Modern Terminal** | [🎬 Watch Terminal Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-rustlang-tauri-activity-7489988657211199488-liuF) | ConPTY integration, multi-tab sessions, split panes, shell selection (PowerShell 7, CMD, Git Bash), custom themes, and zoom controls. |
-| **Project & Workspace Launcher** | [🎬 Watch Launcher & Workspace Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-developertools-rustlang-activity-7492835719602688000-0-cz) | One-click multi-step launch workflows (IDE, dev servers, browser) and instant terminal session snapshot & restore. |
-| **Port Manager, Versions & Snippets** | [🎬 Watch Ports, Versions & Snippets Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-devtools-developerproductivity-activity-7493708867860602881-hdVX) | Real-time TCP socket detection, process command line recovery, graceful/forceful process tree termination, 12-toolchain version detector, and snippet insertion. |
-| **Git Dashboard** | [🎬 Watch Git Dashboard Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-git-github-activity-7494808462086873090-Kgso) | Visual SVG commit graph, branch management, ahead/behind tracking, stash manager, tag manager, and cherry-pick/merge assistants. |
-| **Docker Workspace & Doctor** | [🎬 Watch Docker Workspace Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_docker-developertools-devtools-activity-7496613450530320384-CYMc) | Compose v2 service grouping, dependency graph, streaming log drawer, container terminal shell, and WSL2 Docker Doctor checks. |
-| **Plugin System (SDK v2)** | *Video walkthrough coming soon* | Extensible TypeScript SDK, sandboxed execution, manifest validation, and scoped key-value storage. |
+| **Modern Terminal** | [🎬 Watch Terminal Demo](https://youtu.be/pbQiyEtL-kg) | ConPTY integration, multi-tab sessions, split panes, shell selection (PowerShell 7, CMD, Git Bash), custom themes, and zoom controls. |
+| **Project & Workspace Launcher** | [🎬 Watch Launcher & Workspace Demo](https://youtu.be/T-7YOJxmpxM) | One-click multi-step launch workflows (IDE, dev servers, browser) and instant terminal session snapshot & restore. |
+| **Port Manager, Versions & Snippets** | [🎬 Watch Ports, Versions & Snippets Demo](https://youtu.be/LAAn1ov8Zik) | Real-time TCP socket detection, process command line recovery, graceful/forceful process tree termination, 12-toolchain version detector, and snippet insertion. |
+| **Git Dashboard** | [🎬 Watch Git Dashboard Demo](https://youtu.be/KyMxAcBrQBM) | Visual SVG commit graph, branch management, ahead/behind tracking, stash manager, tag manager, and cherry-pick/merge assistants. |
+| **Docker Workspace & Doctor** | [🎬 Watch Docker Workspace Demo](https://youtu.be/VJgx_NyVtsk) | Compose v2 service grouping, dependency graph, streaming log drawer, container terminal shell, and WSL2 Docker Doctor checks. |
+| **Plugin System (SDK v2)** | [🎬 Watch Plugin System Demo](https://youtu.be/Mu6EPB-zN7g) | Extensible TypeScript SDK, sandboxed execution, manifest validation, and scoped key-value storage. |
 
 ---
 

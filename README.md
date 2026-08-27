@@ -22,11 +22,12 @@ Watch Developer Cockpit demonstrated across core workflows:
 
 | Feature Area | Demonstration | Highlights |
 | :--- | :--- | :--- |
-| **Modern Terminal** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-rustlang-tauri-activity-7489988657211199488-liuF) | ConPTY integration, multi-tab sessions, split panes, shell selection, custom themes, and zoom. |
-| **Project & Workspace Launcher** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_buildinpublic-developertools-rustlang-activity-7492835719602688000-0-cz) | Multi-step launch orchestration (IDE, scripts, browser) and 1-click workspace snapshot & restore. |
-| **Port Manager, Versions & Snippets** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-devtools-developerproductivity-activity-7493708867860602881-hdVX) | Live socket detection, Win32 process memory inspection, process tree killing, toolchain version detector. |
-| **Git Dashboard** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_developertools-git-github-activity-7494808462086873090-Kgso) | Visual SVG commit graph, branch management, ahead/behind tracking, stashes, tags, and merge assistants. |
-| **Docker Workspace & Doctor** | [Watch Video Demo](https://www.linkedin.com/posts/ruhul-amin-tuhin-abbabb2aa_docker-developertools-devtools-activity-7496613450530320384-CYMc) | Compose v2 grouping, SVG dependency graph, streaming logs drawer, and WSL2 Docker Doctor checks. |
+| **Modern Terminal** | [Watch Video Demo](https://youtu.be/pbQiyEtL-kg) | ConPTY integration, multi-tab sessions, split panes, shell selection, custom themes, and zoom. |
+| **Project & Workspace Launcher** | [Watch Video Demo](https://youtu.be/T-7YOJxmpxM) | Multi-step launch orchestration (IDE, scripts, browser) and 1-click workspace snapshot & restore. |
+| **Port Manager, Versions & Snippets** | [Watch Video Demo](https://youtu.be/LAAn1ov8Zik) | Live socket detection, Win32 process memory inspection, process tree killing, toolchain version detector. |
+| **Git Dashboard** | [Watch Video Demo](https://youtu.be/KyMxAcBrQBM) | Visual SVG commit graph, branch management, ahead/behind tracking, stashes, tags, and merge assistants. |
+| **Docker Workspace & Doctor** | [Watch Video Demo](https://youtu.be/VJgx_NyVtsk) | Compose v2 grouping, SVG dependency graph, streaming logs drawer, and WSL2 Docker Doctor checks. |
+| **Plugin System (SDK v2)** | [Watch Video Demo](https://youtu.be/Mu6EPB-zN7g) | Extensible TypeScript SDK, sandboxed execution, manifest validation, and scoped key-value storage. |
 
 *Full demonstration scripts and scenario walkthroughs are documented in [`demo/DEMO.md`](./demo/DEMO.md).*
 

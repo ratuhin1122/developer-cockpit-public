@@ -37,7 +37,7 @@ The public-facing repository for **Developer Cockpit** has been audited across a
 - **Privacy Standard Maintained:** SSH zero-password policy, DPAPI encrypted storage model, and sandboxed plugin execution are properly documented.
 
 ### Product Presentation Problems
-- **None Identified.** The root `README.md` features the real product screenshot (`assets/developer-cockpit.png`), links to 5 real LinkedIn video walkthroughs, uses clean Mermaid flowcharts, avoids excessive emojis, and contains zero fabricated statistics, star counts, or fake customer logos.
+- **None Identified.** The root `README.md` features the real product screenshot (`assets/developer-cockpit.png`), links to 6 real video walkthroughs (YouTube), uses clean Mermaid flowcharts, avoids excessive emojis, and contains zero fabricated statistics, star counts, or fake customer logos.
 
 ---
 
@@ -56,7 +56,7 @@ The public-facing repository for **Developer Cockpit** has been audited across a
 | 9 | Missing documentation links | **PASS** | README and index files comprehensively cross-link all docs. |
 | 10 | Broken Mermaid diagrams | **PASS** | All Mermaid syntax verified and properly formatted. |
 | 11 | Missing screenshots | **PASS** | Product screenshot present at `assets/developer-cockpit.png`. |
-| 12 | Missing demo links | **PASS** | Direct links to 5 live video walkthroughs embedded in README and DEMO.md. |
+| 12 | Missing demo links | **PASS** | Direct links to 6 live video walkthroughs embedded in README and DEMO.md. |
 | 13 | Fake badges | **PASS** | Zero artificial or misleading build/download badges. |
 | 14 | Fake statistics | **PASS** | Zero fabricated benchmarks, star counts, or user numbers. |
 | 15 | Fake partnerships | **PASS** | No claims of existing deals or affiliations. |
